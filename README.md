@@ -42,53 +42,25 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## SaaS/Hosted Platforms
 
-
-
-- **[RamSoft (OmegaAI)](https://www.ramsoft.com/)**  
-
-  Cloud-native RIS/PACS platform with progressive loading, reporting, analytics, and patient engagement features aimed at imaging centers and radiology groups.
-
-
-
-- **[Intelerad](https://www.intelerad.com/)**  
-
-  Enterprise imaging and RIS solutions focused on distributed radiology, image exchange, workflow orchestration, and cloud-enabled collaboration.
-
-
-
-- **[Sectra](https://sectra.com/)**  
-
-  Highly regarded enterprise imaging and RIS/PACS platform known for radiology, breast imaging, and multi-specialty workflows; frequent Best in KLAS recognition.
-
-
-
-- **[GE HealthCare (Centricity / True PACS & RIS)](https://www.gehealthcare.com/)**  
-
-  Widely deployed RIS and PACS solutions with a large installed base, supporting high-volume hospital and multi-site radiology operations.
-
-
-
-- **[Philips IntelliSpace / HealthSuite Imaging](https://www.philips.com/)**  
-
-  Enterprise imaging platform including RIS capabilities, advanced visualization, and cloud offerings for radiology departments.
-
-
-
-- **[Fujifilm Synapse](https://www.fujifilm.com/)**  
-
-  Enterprise imaging and VNA-oriented platform with strong RIS/PACS integration and multi-department support.
-
-
-
-- **[Visage Imaging, Carestream, Novarad, Merge](https://visageimaging.com/)**  
-
-  Specialized imaging and RIS/PACS vendors offering viewers, workflow tools, and departmental or enterprise solutions.
-
-
-
-- **[Other RIS & enterprise imaging platforms](https://www.ramsoft.com/)**  
-
-  Additional commercial systems covering teleradiology, AI-assisted reporting, and integrated radiology operations.
+| Platform | Description | Pricing (Starting Tier) | Free Tier / Trial Limit |
+| :--- | :--- | :--- | :--- |
+| **[PostDICOM](https://www.postdicom.com/)** | Cloud-native PACS and RIS platform with web-based HTML5 diagnostic DICOM viewer, multi-modality routing, and reporting worklists. | Starts at **$79/month** (Essential tier; includes 50 GB cloud storage, HTML5 diagnostic viewer, 1 user; or $948/year) | **7-day free trial** (up to 50 GB cloud storage, full diagnostic viewer and plan features; auto-renews unless cancelled) |
+| **[SonicDICOM Cloud PACS](https://sonicdicom.com/)** | Web-based Cloud PACS and medical imaging platform offering DICOM archive, zero-footprint web viewer, and modality integration. | Starts at **$39/month** (Basic Plan; monthly or annual subscription) | **14-day free trial** (full access to Cloud PACS features, web viewer, and storage) |
+| **[CrelioHealth PACS](https://creliohealth.com/radiology/pacs/pacs-system/)** | Cloud radiology information and reporting platform with integrated PACS, diagnostic worklists, and multi-center workflow orchestration. | Starts at **$50/month** minimum commitment ($0.01/study for X-Ray/USG, $0.04/study for MRI, $0.08/study for CT-Scan) | **14-day free trial** (guided interactive demo sandbox with full reporting workflow and worklist automation) |
+| **[Medicai](https://medicai.io/)** | Collaborative cloud PACS and radiology workflow infrastructure with browser-based DICOM viewer, patient/doctor portal, and cloud archive. | Starts at **$249/month** ($209/month billed annually; Starter tier with 500 GB storage and unlimited users) | **14-day free trial** (500 GB storage, unlimited user accounts); Free tier: browser DICOM viewer only (0 GB cloud storage, no account required) |
+| **[Tricefy](https://triceimaging.com/)** | Cloud-hosted medical imaging platform providing zero-footprint DICOM viewing, mobile image routing, patient sharing, and reporting. | Starts at **$42/month** ($500/year billed annually) or $749/month (Standard tier with 2 TB storage) | **30-day free trial** (full access to cloud archive, diagnostic viewing, and mobile image routing) |
+| **[Softneta MedDream](https://www.softneta.com/products/medical-imaging/meddream-dicom-viewer/)** | FDA-cleared and CE-certified HTML5 web-based DICOM viewer and web-PACS engine designed for integration with RIS, HIS, and EHR. | Starts at **~$130/user/month** (£1,200/user/year for commercial license tier) | **45-day trial license** (fully functional diagnostic toolset and integration APIs); permanent live online browser demo sandbox |
+| **[OnePacs](https://onepacs.com/)** | Cloud teleradiology and outpatient RIS/PACS platform featuring structured reporting, worklist orchestration, and integrated web viewer. | Starts at **$200/month** (minimum platform subscription tier with volume-tiered study routing) | Free courtesy tier for testing/research (up to **10 studies/month**); **30-day free trial** for imaging practices |
+| **[RamSoft (OmegaAI)](https://www.ramsoft.com/)** | Cloud-native imaging EMR and RIS/PACS platform offering automated scheduling, unified worklists, and progressive image streaming. | Starts at **$800/month** minimum commitment (~$1.50 per study, includes unlimited users and facilities) | **30-day free trial** (guided proof-of-concept pilot and sandbox access to full cloud RIS/PACS workflow) |
+| **[Ambra Health (Intelerad)](https://www.ambrahealth.com/)** | Cloud enterprise imaging suite and medical image management platform with teleradiology worklists, DICOM routing, and EHR integration. | Starts at **$500/month** (base tier for outpatient clinics and single-site imaging centers) | **30-day free trial** (guided cloud sandbox with full access to image exchange and diagnostic viewing) |
+| **[Novarad (NovaRIS)](https://www.novarad.net/novaris-radiology-information-system)** | Integrated radiology information system and PACS platform offering patient tracking, custom report generation, and turnkey image archiving. | Starts at **$400/month** (turnkey subscription / Evergreen service contract for single imaging facility) | **30-day free trial** (guided pilot sandbox for workflow evaluation upon qualification) |
+| **[MedicsRIS (Advanced Data Systems)](https://www.adsc.com/radiology-information-system-medicsris)** | Comprehensive radiology information system featuring intelligent patient scheduling, insurance verification, and automated reporting. | Starts at **$500/month** (entry tier for single practitioner / 1 user seat) | **14-day free trial** (guided sandbox demo with full access to scheduling, reporting, and PACS integration) |
+| **[GE HealthCare (Edison True PACS & RIS)](https://www.gehealthcare.com/)** | Cloud-enabled radiology PACS and workflow orchestration platform designed for outpatient clinics, diagnostic centers, and hospital imaging. | Starts at **$500/month** (entry cloud subscription tier for small imaging practices) | **30-day free trial** (guided proof-of-concept deployment with full clinical workflow features) |
+| **[Philips IntelliSpace / HealthSuite Imaging](https://www.philips.com/)** | Enterprise imaging platform featuring cloud-based radiology informatics, advanced visualization, and integrated clinical workflows. | Starts at **$1,200/month** (base cloud subscription tier for diagnostic imaging departments) | **30-day free trial** (guided evaluation pilot in cloud sandbox with synthetic clinical datasets) |
+| **[Fujifilm Synapse](https://www.fujifilm.com/)** | Enterprise imaging and VNA-oriented platform providing robust RIS/PACS integration, server-side rendering, and multi-department support. | Starts at **$1,000/month** (base cloud-managed service agreement for imaging practices) | **30-day free trial** (guided clinical evaluation trial with workflow testing and modality connectivity) |
+| **[Sectra Workstation & PACS](https://sectra.com/)** | Best-in-KLAS enterprise imaging and RIS/PACS platform recognized for radiology reporting, high reliability, and multi-specialty workflows. | Starts at **$1,500/month** (Sectra One Cloud entry subscription tier for departmental imaging centers) | **30-day free trial** (proof-of-concept evaluation sandbox with simulated clinical workflow) |
+| **[Visage Imaging (Visage 7)](https://visageimaging.com/)** | High-performance enterprise imaging platform utilizing server-side rendering for ultra-fast streaming of large radiology datasets. | Starts at **$1,000/month** (base cloud instance license tier for imaging centers) | **30-day free trial** (cloud proof-of-concept deployment with full viewer features) |
+| **[Carestream (Vue RIS/PACS)](https://www.carestream.com/)** | Web-enabled RIS and PACS solution offering automated worklists, diagnostic reporting, and centralized departmental image management. | Starts at **$750/month** (entry cloud-hosted eHealth services subscription tier) | **30-day free trial** (guided sandbox demo with access to Vue reporting and worklist modules) |
 
 
 
