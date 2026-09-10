@@ -1,185 +1,205 @@
-# Awesome-Radiology-Information-Systems
-
-## Top Radiology Information Systems Ecosystem
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on RIS, Radiology Workflow, Scheduling, Reporting, Worklist Management, PACS Integration & Imaging Operations*  
-
-**Last updated: September 2026**
-
-
-
-This repository tracks notable **SaaS/commercial platforms** and **open-source projects** for **Radiology Information Systems (RIS)**. These systems manage the administrative and clinical workflow of radiology departments—including patient scheduling, modality worklists, reporting, results distribution, billing integration, and close coupling with PACS and imaging viewers.
-
-
-
-**Examples** include RamSoft, Intelerad, Merge Imaging, Novarad, Carestream, Visage Imaging, Sectra, Philips IntelliSpace, Fuji Synapse, and GE Centricity RIS (the category leaders).
-
-
-
-**Open-source emphasis**: Full enterprise RIS platforms with deep EHR/PACS integration, regulatory compliance, and large-scale workflow orchestration are predominantly commercial. Open-source activity includes dedicated RIS projects (**Sirius RIS**, **KloudRIS**), academic implementations, DICOM/PACS foundations (**Orthanc**), and web viewers (**OHIF**). This section lists every significant relevant project found.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-| Platform | Description | Pricing (Starting Tier) | Free Tier / Trial Limit |
-| :--- | :--- | :--- | :--- |
-| **[PostDICOM](https://www.postdicom.com/)** | Cloud-native PACS and RIS platform with web-based HTML5 diagnostic DICOM viewer, multi-modality routing, and reporting worklists. | Starts at **$79/month** (Essential tier; includes 50 GB cloud storage, HTML5 diagnostic viewer, 1 user; or $948/year) | **7-day free trial** (up to 50 GB cloud storage, full diagnostic viewer and plan features; auto-renews unless cancelled) |
-| **[SonicDICOM Cloud PACS](https://sonicdicom.com/)** | Web-based Cloud PACS and medical imaging platform offering DICOM archive, zero-footprint web viewer, and modality integration. | Starts at **$39/month** (Basic Plan; monthly or annual subscription) | **14-day free trial** (full access to Cloud PACS features, web viewer, and storage) |
-| **[CrelioHealth PACS](https://creliohealth.com/radiology/pacs/pacs-system/)** | Cloud radiology information and reporting platform with integrated PACS, diagnostic worklists, and multi-center workflow orchestration. | Starts at **$50/month** minimum commitment ($0.01/study for X-Ray/USG, $0.04/study for MRI, $0.08/study for CT-Scan) | **14-day free trial** (guided interactive demo sandbox with full reporting workflow and worklist automation) |
-| **[Medicai](https://medicai.io/)** | Collaborative cloud PACS and radiology workflow infrastructure with browser-based DICOM viewer, patient/doctor portal, and cloud archive. | Starts at **$249/month** ($209/month billed annually; Starter tier with 500 GB storage and unlimited users) | **14-day free trial** (500 GB storage, unlimited user accounts); Free tier: browser DICOM viewer only (0 GB cloud storage, no account required) |
-| **[Tricefy](https://triceimaging.com/)** | Cloud-hosted medical imaging platform providing zero-footprint DICOM viewing, mobile image routing, patient sharing, and reporting. | Starts at **$42/month** ($500/year billed annually) or $749/month (Standard tier with 2 TB storage) | **30-day free trial** (full access to cloud archive, diagnostic viewing, and mobile image routing) |
-| **[Softneta MedDream](https://www.softneta.com/products/medical-imaging/meddream-dicom-viewer/)** | FDA-cleared and CE-certified HTML5 web-based DICOM viewer and web-PACS engine designed for integration with RIS, HIS, and EHR. | Starts at **~$130/user/month** (£1,200/user/year for commercial license tier) | **45-day trial license** (fully functional diagnostic toolset and integration APIs); permanent live online browser demo sandbox |
-| **[OnePacs](https://onepacs.com/)** | Cloud teleradiology and outpatient RIS/PACS platform featuring structured reporting, worklist orchestration, and integrated web viewer. | Starts at **$200/month** (minimum platform subscription tier with volume-tiered study routing) | Free courtesy tier for testing/research (up to **10 studies/month**); **30-day free trial** for imaging practices |
-| **[RamSoft (OmegaAI)](https://www.ramsoft.com/)** | Cloud-native imaging EMR and RIS/PACS platform offering automated scheduling, unified worklists, and progressive image streaming. | Starts at **$800/month** minimum commitment (~$1.50 per study, includes unlimited users and facilities) | **30-day free trial** (guided proof-of-concept pilot and sandbox access to full cloud RIS/PACS workflow) |
-| **[Ambra Health (Intelerad)](https://www.ambrahealth.com/)** | Cloud enterprise imaging suite and medical image management platform with teleradiology worklists, DICOM routing, and EHR integration. | Starts at **$500/month** (base tier for outpatient clinics and single-site imaging centers) | **30-day free trial** (guided cloud sandbox with full access to image exchange and diagnostic viewing) |
-| **[Novarad (NovaRIS)](https://www.novarad.net/novaris-radiology-information-system)** | Integrated radiology information system and PACS platform offering patient tracking, custom report generation, and turnkey image archiving. | Starts at **$400/month** (turnkey subscription / Evergreen service contract for single imaging facility) | **30-day free trial** (guided pilot sandbox for workflow evaluation upon qualification) |
-| **[MedicsRIS (Advanced Data Systems)](https://www.adsc.com/radiology-information-system-medicsris)** | Comprehensive radiology information system featuring intelligent patient scheduling, insurance verification, and automated reporting. | Starts at **$500/month** (entry tier for single practitioner / 1 user seat) | **14-day free trial** (guided sandbox demo with full access to scheduling, reporting, and PACS integration) |
-| **[GE HealthCare (Edison True PACS & RIS)](https://www.gehealthcare.com/)** | Cloud-enabled radiology PACS and workflow orchestration platform designed for outpatient clinics, diagnostic centers, and hospital imaging. | Starts at **$500/month** (entry cloud subscription tier for small imaging practices) | **30-day free trial** (guided proof-of-concept deployment with full clinical workflow features) |
-| **[Philips IntelliSpace / HealthSuite Imaging](https://www.philips.com/)** | Enterprise imaging platform featuring cloud-based radiology informatics, advanced visualization, and integrated clinical workflows. | Starts at **$1,200/month** (base cloud subscription tier for diagnostic imaging departments) | **30-day free trial** (guided evaluation pilot in cloud sandbox with synthetic clinical datasets) |
-| **[Fujifilm Synapse](https://www.fujifilm.com/)** | Enterprise imaging and VNA-oriented platform providing robust RIS/PACS integration, server-side rendering, and multi-department support. | Starts at **$1,000/month** (base cloud-managed service agreement for imaging practices) | **30-day free trial** (guided clinical evaluation trial with workflow testing and modality connectivity) |
-| **[Sectra Workstation & PACS](https://sectra.com/)** | Best-in-KLAS enterprise imaging and RIS/PACS platform recognized for radiology reporting, high reliability, and multi-specialty workflows. | Starts at **$1,500/month** (Sectra One Cloud entry subscription tier for departmental imaging centers) | **30-day free trial** (proof-of-concept evaluation sandbox with simulated clinical workflow) |
-| **[Visage Imaging (Visage 7)](https://visageimaging.com/)** | High-performance enterprise imaging platform utilizing server-side rendering for ultra-fast streaming of large radiology datasets. | Starts at **$1,000/month** (base cloud instance license tier for imaging centers) | **30-day free trial** (cloud proof-of-concept deployment with full viewer features) |
-| **[Carestream (Vue RIS/PACS)](https://www.carestream.com/)** | Web-enabled RIS and PACS solution offering automated worklists, diagnostic reporting, and centralized departmental image management. | Starts at **$750/month** (entry cloud-hosted eHealth services subscription tier) | **30-day free trial** (guided sandbox demo with access to Vue reporting and worklist modules) |
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[Sirius RIS](https://github.com/opendicom/sirius-ris)**  
-
-  Open-source radiological information system built with modern web technologies (Angular, Node.js, MongoDB). Supports multi-language, worklists, DICOM integration, and is designed for clinical use alongside open PACS components.
-
-
-
-- **[KloudRIS](https://github.com/KloudMedical/KloudRIS)**  
-
-  Open-source, multi-tenant, web-based outpatient RIS and practice management solution aimed at managing the full radiology workflow from a browser.
-
-
-
-- **[Orthanc](https://www.orthanc-server.com/)**  
-
-  Lightweight, open-source DICOM server / PACS that serves as a foundational building block for many open imaging and RIS workflows.
-
-
-
-- **[OHIF Viewer](https://github.com/OHIF/Viewers)**  
-
-  Leading open-source web-based medical imaging viewer frequently paired with open RIS and PACS systems for diagnostic review.
-
-
-
-- **[Academic & research RIS implementations](https://github.com/search?q=Radiology+Information+System+OR+RIS+DICOM)**  
-
-  University and research projects implementing core RIS functions (worklists, reporting, patient tracking, HL7/DICOM communication).
-
-
-
-- **[PACS/RIS crawlers & research tools](https://github.com/pacs-ris-crawler/pacs-ris-crawler)**  
-
-  Tools for searching, indexing, and extracting data from PACS and RIS systems to support research and secondary use.
-
-
-
-- **[DICOM & HL7 open-source stacks](https://github.com/search?q=DICOM+OR+HL7+OR+MWL+open+source)**  
-
-  Libraries and servers for modality worklists, image routing, and healthcare messaging that underpin custom RIS solutions.
-
-
-
-- **[Other open imaging workflow projects](https://github.com/search?q=open+source+RIS+OR+radiology+workflow)**  
-
-  Emerging community efforts around reporting, scheduling, and radiology operations.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **DCM4CHE / dcm4che toolkit**: Java-based DICOM and IHE tools widely used in open imaging infrastructures.
-
-- **Weasis / other open viewers**: Alternative diagnostic and clinical viewers.
-
-- **HL7 interface engines**: Mirth Connect (next-gen community editions) or similar for integrating RIS with EHR and billing.
-
-- **Reporting templates & structured reporting**: Open tools for radiology report generation and NLP-assisted drafting.
-
-- **Research data pipelines**: Projects that de-identify and extract imaging + RIS data for AI and analytics.
-
-- Containerized deployments (Docker/Kubernetes) of Orthanc + OHIF + custom RIS front-ends.
-
-
-
-**Frameworks for building custom systems**:  
-
-A practical open-source stack often combines **Sirius RIS** or **KloudRIS** (or a custom web RIS) with **Orthanc** as the PACS archive and **OHIF** as the viewer.  
-
-Add HL7/DICOM modality worklist services and an interface engine for EHR integration.  
-
-Commercial RIS platforms (RamSoft, Intelerad, Sectra, GE, Philips, Fuji, etc.) provide mature workflow engines, regulatory support, advanced reporting, analytics, and vendor-backed service that most open-source assemblies still require significant clinical IT effort to match.  
-
-Many academic centers and smaller practices successfully run hybrid environments using open PACS/viewers alongside commercial or custom RIS components.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Radiology Information Systems handle protected health information (PHI), diagnostic workflows, and patient safety–critical processes. Any system must meet applicable regulatory requirements (HIPAA, GDPR, local medical device and data-protection rules) and undergo proper clinical validation.
-
-- Open-source RIS and imaging tools offer transparency and flexibility but require expertise in healthcare IT, DICOM/HL7, security hardening, backup, and ongoing maintenance. They are not automatically equivalent to certified commercial platforms for production clinical use. Operators remain fully responsible for compliance, reliability, and patient safety.
-
-
+<p align="center">
+  <img src="./assets/banner.svg" alt="Awesome Radiology Information Systems Banner" width="100%" />
+</p>
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Radiology-Information-Systems/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Radiology-Information-Systems?style=flat-square&color=ffd700" alt="Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Radiology-Information-Systems/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Radiology-Information-Systems?style=flat-square&color=00b4d8" alt="Forks" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Radiology-Information-Systems/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="License" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 ---
 
+# 🩻 Awesome Radiology Information Systems (RIS)
 
+> A meticulously curated, SEO-optimized directory of **Radiology Information Systems (RIS)**, **Cloud PACS & VNA Platforms**, **DICOM Web Viewers**, **Modality Worklist (MWL) Engines**, and **Open-Source Medical Imaging Software**.
 
-**Made for radiology administrators, imaging IT teams, radiologists, PACS administrators, and healthcare technologists.**  
+**Radiology Information Systems (RIS)** serve as the operational backbone of modern diagnostic imaging departments, hospital networks, outpatient clinics, and teleradiology practices. While **Picture Archiving and Communication Systems (PACS)** store and transmit digital imaging files (DICOM), a **RIS** directs the complete clinical and business workflow: patient scheduling, modality worklist generation, imaging protocolling, technologist tracking, radiologist dictation and structured reporting, results dissemination, and billing/EHR synchronization (via HL7 and FHIR).
 
-Let's expand open, interoperable tools for radiology workflows while recognizing the essential role of mature commercial RIS and enterprise imaging platforms.
+---
+
+## 📑 Table of Contents
+
+- [🌟 Architectural Overview: RIS vs. PACS vs. VNA](#-architectural-overview-ris-vs-pacs-vs-vna)
+- [🏢 SaaS & Commercial Hosted Platforms](#-saas--commercial-hosted-platforms)
+  - [📊 Market Size & Industry Dynamics](#-market-size--industry-dynamics)
+  - [📋 SaaS RIS/PACS Comparison Table](#-saas-rispacs-comparison-table)
+- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🧩 Building a Modern Open-Source Imaging Stack](#-building-a-modern-open-source-imaging-stack)
+- [🔍 Key Evaluation Criteria for RIS Buyers](#-key-evaluation-criteria-for-ris-buyers)
+- [📈 Star History](#-star-history)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚖️ Disclaimer & Regulatory Compliance](#️-disclaimer--regulatory-compliance)
+
+---
+
+## 🌟 Architectural Overview: RIS vs. PACS vs. VNA
+
+Understanding how modern healthcare imaging components fit together is essential for hospital IT administrators and developers alike:
+
+```
+[ Electronic Health Record (EHR) ]
+                │  (HL7 ADT / ORM Orders)
+                ▼
+[ Radiology Information System (RIS) ] ◄── Scheduling, Worklists, Billing, Reporting
+                │
+                ├──────────────────────┬──────────────────────┐
+                │ (DICOM Modality MWL) │ (HL7 ORU Reports)    │ (DICOMweb / WADO-RS)
+                ▼                      ▼                      ▼
+    [ Modalities (CT/MRI/X-Ray) ]  [ Radiologist Viewer ]  [ Referring Portal ]
+                │                              │
+                └───────────────┬──────────────┘
+                                ▼
+               [ Cloud PACS / Vendor Neutral Archive (VNA) ]
+```
+
+- **RIS (Radiology Information System)**: Manages patient demographics, order entry, appointment scheduling, DICOM Modality Worklist (MWL) management, reporting workflows, radiologist assignment, and billing capture.
+- **PACS (Picture Archiving and Communication System)**: Short-to-medium-term storage, retrieval, distribution, and diagnostic presentation of medical images.
+- **VNA (Vendor Neutral Archive)**: Standardized, long-term consolidated enterprise archive that decouples medical data from any proprietary PACS vendor.
+
+---
+
+## 🏢 SaaS & Commercial Hosted Platforms
+
+### 📊 Market Size & Industry Dynamics
+
+> **📈 Sector Market Size & Concentration**: The global Radiology Information Systems (RIS) market is valued at approximately **USD 1.16 Billion to USD 1.47 Billion in 2026** and is projected to expand to **USD 2.18 Billion to USD 2.45 Billion by 2031–2033** (CAGR ~7.5%). The sector demonstrates **moderate market concentration**: the top ten established healthcare IT conglomerates (such as GE HealthCare, Philips, Siemens Healthineers, and Epic) capture roughly **55% of global revenue**, while the remaining 45% is moderately fragmented across specialized outpatient software, teleradiology orchestration systems, and agile cloud-native SaaS startups rather than existing as an impenetrable winner-take-all monopoly.
+
+---
+
+### 📋 SaaS RIS/PACS Comparison Table
+
+*The table below is sorted in **descending order by company size** (market capitalization or annual revenue).*
+
+| Platform | Description & Key Capabilities | Company Size (Valuation / Revenue) | Pricing (Starting Tier) | Free Tier / Free Trial Limit |
+| :--- | :--- | :--- | :--- | :--- |
+| **[GE HealthCare (Edison True PACS & RIS)](https://www.gehealthcare.com/)** | Cloud-native radiology PACS and workflow orchestration platform with AI-assisted reporting, vendor-neutral routing, and high-volume multi-site clinical scheduling. | **$38B+ Market Cap / $19.6B Revenue** (NASDAQ: GEHC) | Starts at **$500/month** (entry cloud subscription tier for outpatient clinics) | **30-day free trial** (guided proof-of-concept pilot with full workflow and modality connectivity) |
+| **[Fujifilm (Synapse RIS/PACS)](https://www.fujifilm.com/)** | Enterprise imaging, VNA, and RIS platform featuring server-side image rendering, comprehensive clinical reporting, and deep multi-departmental EHR integration. | **$30B+ Market Cap / $20.0B Revenue** (TYO: 4901; Healthcare ~$7B) | Starts at **$1,000/month** (base cloud-managed service tier for private practices) | **30-day free trial** (guided clinical evaluation sandbox with modality test connectivity) |
+| **[Philips (IntelliSpace / HealthSuite)](https://www.philips.com/)** | Cloud-based enterprise radiology informatics platform offering advanced 3D visualization, intelligent worklist distribution, and longitudinal patient imaging records. | **$28B+ Market Cap / $19.5B Revenue** (NYSE: PHG) | Starts at **$1,200/month** (base diagnostic imaging department cloud tier) | **30-day free trial** (guided cloud evaluation pilot populated with synthetic clinical datasets) |
+| **[Visage Imaging (Visage 7)](https://visageimaging.com/)** | High-performance enterprise imaging platform powered by proprietary server-side rendering for instant streaming of massive 3D CT, MRI, and mammography datasets. | **$15B+ Market Cap / $160M+ Revenue** (Parent: Pro Medicus Ltd, ASX: PME) | Starts at **$1,000/month** (base AWS Marketplace cloud instance license tier) | **30-day free trial** (enterprise evaluation pilot with cloud proof-of-concept sandbox) |
+| **[Sectra (Workstation & PACS)](https://sectra.com/)** | Consecutive Best-in-KLAS enterprise imaging and RIS/PACS platform renowned for diagnostic stability, breast imaging workflows, and multi-specialty collaboration. | **$5.8B Market Cap / $260M Revenue** (STO: SECT-B) | Starts at **$1,500/month** (Sectra One Cloud entry departmental subscription) | **30-day free trial** (guided evaluation sandbox with simulated diagnostic clinical workflows) |
+| **[Ambra Health (Intelerad)](https://www.ambrahealth.com/)** | Cloud-first medical image management suite providing rapid DICOM upload, automated routing, teleradiology worklists, and secure patient/physician image sharing portals. | **~$1.2B Valuation / ~$200M Revenue** (Backed by HGGC & TA Associates) | Starts at **$500/month** (entry cloud tier for outpatient diagnostic centers) | **30-day free trial** (guided cloud sandbox with full diagnostic viewer and image routing) |
+| **[Carestream (Vue RIS/PACS)](https://www.carestream.com/)** | Fully web-enabled radiology workflow and archiving platform offering integrated voice recognition, automated worklists, and centralized departmental management. | **~$1.0B+ Revenue** (Global healthcare imaging leader backed by Onex) | Starts at **$750/month** (entry cloud-hosted eHealth services subscription tier) | **30-day free trial** (guided sandbox trial featuring Vue reporting and worklist modules) |
+| **[Novarad (NovaRIS & NovaPACS)](https://www.novarad.net/novaris-radiology-information-system)** | Turnkey radiology information system and PACS platform featuring intelligent appointment tracking, custom report templates, and automated insurance pre-authorization. | **~$50M Revenue** (Established private enterprise imaging provider) | Starts at **$400/month** (turnkey Evergreen subscription contract for single facility) | **30-day free trial** (guided evaluation sandbox for clinical workflow qualification) |
+| **[RamSoft (OmegaAI)](https://www.ramsoft.com/)** | Cloud-native imaging EMR and RIS/PACS platform (OmegaAI & PowerServer) with progressive image streaming, clinical reporting, and unified modality worklists. | **~$30M Revenue** (Independent medical imaging IT pioneer) | Starts at **$800/month** minimum commitment (~$1.50/study, unlimited users & facilities) | **30-day free trial** (guided proof-of-concept pilot with full RIS/PACS cloud access) |
+| **[MedicsRIS (Advanced Data Systems)](https://www.adsc.com/radiology-information-system-medicsris)** | Comprehensive radiology information system providing automated patient scheduling, prior-authorization tracking, multi-modality worklists, and radiologist reporting. | **~$25M Revenue** (Leading healthcare IT automation software vendor) | Starts at **$500/month** (entry tier for single practitioner / 1 user seat) | **14-day free trial** (guided sandbox demo with complete scheduling and reporting suite) |
+| **[Tricefy (Trice Imaging)](https://triceimaging.com/)** | Lightweight, zero-footprint medical imaging cloud platform for ultrasound and radiology sharing, mobile diagnostic viewing, remote consultation, and reporting. | **~$12M Revenue / ~$20M+ Funding** (Venture-backed medical cloud platform) | Starts at **$42/month** ($500/year billed annually) or $749/month (Standard tier with 2 TB) | **30-day free trial** (full access to cloud storage, mobile routing, and sharing tools) |
+| **[CrelioHealth PACS](https://creliohealth.com/radiology/pacs/pacs-system/)** | Modern cloud radiology reporting and PACS platform featuring automated modality worklists, diagnostic dictation templates, and real-time patient engagement portals. | **~$10M Revenue / ~$5M+ Funding** (Formerly LiveHealth, venture-backed) | Starts at **$50/month** minimum commitment ($0.01/study X-Ray/USG, $0.04 MRI, $0.08 CT) | **14-day free trial** (interactive sandbox demo with full reporting and worklists) |
+| **[Softneta MedDream](https://www.softneta.com/products/medical-imaging/meddream-dicom-viewer/)** | FDA 510(k)-cleared and CE-certified HTML5 zero-footprint web DICOM viewer and web-PACS engine designed for modular integration into RIS, HIS, and EHR platforms. | **~$6M Revenue** (European specialized medical imaging vendor) | Starts at **~$130/user/month** (£1,200/user/year commercial license tier) | **45-day trial license** (fully functional diagnostic toolset & APIs); free online web demo |
+| **[PostDICOM](https://www.postdicom.com/)** | Cloud PACS and RIS software providing HTML5 diagnostic imaging viewer, multi-device medical data communication, clinical worklists, and secure image sharing. | **~$5M Revenue** (Profitable specialized imaging cloud SaaS) | Starts at **$79/month** (Essential tier; 50 GB storage, HTML5 viewer, 1 user; or $948/yr) | **7-day free trial** (up to 50 GB cloud storage, full diagnostic viewer and plan access) |
+| **[OnePacs](https://onepacs.com/)** | Cloud teleradiology and outpatient RIS/PACS platform featuring structured radiologist reporting, unified worklist orchestration, and web-based diagnostic study review. | **~$4M Revenue** (Bootstrapped teleradiology platform provider) | Starts at **$200/month** (minimum base platform tier with volume-tiered study routing) | Free courtesy tier for testing/research (up to **10 studies/month**); **30-day free trial** |
+| **[Medicai](https://medicai.io/)** | Collaborative cloud PACS and radiology infrastructure platform offering zero-install web DICOM viewing, patient portal integration, and cloud study archiving. | **~$3M Revenue / ~$3M+ Funding** (Venture-backed cloud medical imaging SaaS) | Starts at **$249/month** ($209/month billed annually; 500 GB storage, unlimited users) | **14-day free trial** (500 GB storage, unlimited accounts); Free tier: browser viewer (0 GB) |
+| **[SonicDICOM Cloud PACS](https://sonicdicom.com/)** | Modern web-based DICOM server and Cloud PACS platform featuring real-time image viewing, multi-client access, and easy hardware gateway integration. | **~$2M Revenue** (Specialized medical imaging PACS developer) | Starts at **$39/month** (Basic Plan; monthly or annual subscription) | **14-day free trial** (full access to Cloud PACS features, web viewer, and storage) |
+
+---
+
+## 🔓 Open-Source GitHub Projects
+
+The open-source radiology and imaging software ecosystem provides powerful foundational building blocks—including high-performance diagnostic web viewers, DICOM communication servers, modality worklist tools, and full RIS practice management solutions.
+
+*Sorted in **descending order by GitHub star count**.*
+
+- **[OHIF Viewer](https://github.com/OHIF/Viewers)** [![Stars](https://img.shields.io/github/stars/OHIF/Viewers?style=social&color=white)](https://github.com/OHIF/Viewers/stargazers)  
+  Leading zero-footprint medical imaging web viewer built with React and Cornerstone3D. Provides an extensible framework for diagnostic review, DICOMweb communication, oncology lesion tracking, and integration with open or commercial RIS worklists.
+
+- **[3D Slicer](https://github.com/Slicer/Slicer)** [![Stars](https://img.shields.io/github/stars/Slicer/Slicer?style=social&color=white)](https://github.com/Slicer/Slicer/stargazers)  
+  Renowned open-source software platform for medical image computing, multi-modality 3D visualization, advanced segmentation, surgical planning, and PACS query/retrieve operations.
+
+- **[pydicom](https://github.com/pydicom/pydicom)** [![Stars](https://img.shields.io/github/stars/pydicom/pydicom?style=social&color=white)](https://github.com/pydicom/pydicom/stargazers)  
+  Industry-standard Python package for parsing, reading, modifying, and generating DICOM files. Extensively used in RIS backend integration pipelines, data de-identification, and AI model ingestion.
+
+- **[DWV (DICOM Web Viewer)](https://github.com/ivmartel/dwv)** [![Stars](https://img.shields.io/github/stars/ivmartel/dwv?style=social&color=white)](https://github.com/ivmartel/dwv/stargazers)  
+  Zero-footprint medical imaging library written in pure HTML5 and JavaScript. Ideal for embedding lightweight DICOM slice navigation and measurement tools inside web-based RIS portals.
+
+- **[Weasis](https://github.com/nroduit/Weasis)** [![Stars](https://img.shields.io/github/stars/nroduit/Weasis?style=social&color=white)](https://github.com/nroduit/Weasis/stargazers)  
+  High-performance, multiplatform standalone and web-integrated DICOM diagnostic viewer. Widely deployed across European and international clinical hospitals paired with PACS and RIS.
+
+- **[Cornerstone3D](https://github.com/cornerstonejs/cornerstone3D)** [![Stars](https://img.shields.io/github/stars/cornerstonejs/cornerstone3D?style=social&color=white)](https://github.com/cornerstonejs/cornerstone3D/stargazers)  
+  Next-generation JavaScript library for rendering medical images in web browsers utilizing WebGL/WebGPU. Powers complex 3D volume reconstruction (MPR), oblique slicing, and clinical annotation tools in modern web RIS platforms.
+
+- **[dcm4chee arc light](https://github.com/dcm4che/dcm4chee-arc-light)** [![Stars](https://img.shields.io/github/stars/dcm4che/dcm4chee-arc-light?style=social&color=white)](https://github.com/dcm4che/dcm4chee-arc-light/stargazers)  
+  Next-generation DICOM archive, VNA, and Modality Worklist (MWL) management system built on Java EE and WildFly. Serves as a robust backend workhorse connecting modalities to RIS worklists.
+
+- **[dcmjs](https://github.com/dcmjs-org/dcmjs)** [![Stars](https://img.shields.io/github/stars/dcmjs-org/dcmjs?style=social&color=white)](https://github.com/dcmjs-org/dcmjs/stargazers)  
+  JavaScript implementation of DICOM manipulation, DICOMweb protocols, and Structured Reporting (SR) parsing, essential for browser-based radiology tools and reporting interfaces.
+
+- **[DICOM Standard in JSON](https://github.com/innolitics/dicom-standard)** [![Stars](https://img.shields.io/github/stars/innolitics/dicom-standard?style=social&color=white)](https://github.com/innolitics/dicom-standard/stargazers)  
+  Automated parser and machine-readable JSON representation of the complete DICOM standard. Invaluable for validating attributes, building robust RIS schemas, and ensuring modality worklist compliance.
+
+- **[Orthanc Mirror](https://github.com/jodogne/OrthancMirror)** [![Stars](https://img.shields.io/github/stars/jodogne/OrthancMirror?style=social&color=white)](https://github.com/jodogne/OrthancMirror/stargazers) *(Official Portal: [orthanc-server.com](https://www.orthanc-server.com/))*  
+  Lightweight, standalone, RESTful DICOM server and PACS archive written in C++. Offers extensive Lua/Python scripting and DICOMweb plugins, making it the top open-source backend for pairing with web RIS front-ends.
+
+- **[ChRIS Research Integration System](https://github.com/FNNDSC/ChRIS_ultron_backEnd)** [![Stars](https://img.shields.io/github/stars/FNNDSC/ChRIS_ultron_backEnd?style=social&color=white)](https://github.com/FNNDSC/ChRIS_ultron_backEnd/stargazers)  
+  Open-source distributed framework created by Boston Children's Hospital for orchestrating medical image processing pipelines, deep learning AI models, and clinical research data flows.
+
+- **[Sirius RIS](https://github.com/opendicom/sirius-ris)** [![Stars](https://img.shields.io/github/stars/opendicom/sirius-ris?style=social&color=white)](https://github.com/opendicom/sirius-ris/stargazers)  
+  Open-source radiological information system built on Angular, Node.js, and MongoDB. Supports multi-language clinical scheduling, modality worklists, and seamless coupling with open PACS servers.
+
+- **[PACS/RIS Crawler](https://github.com/pacs-ris-crawler/pacs-ris-crawler)** [![Stars](https://img.shields.io/github/stars/pacs-ris-crawler/pacs-ris-crawler?style=social&color=white)](https://github.com/pacs-ris-crawler/pacs-ris-crawler/stargazers)  
+  Automated search and indexing crawler designed to query, audit, and extract structured diagnostic reports and metadata across federated PACS and RIS installations.
+
+- **[KloudRIS](https://github.com/KloudMedical/KloudRIS)** [![Stars](https://img.shields.io/github/stars/KloudMedical/KloudRIS)](https://github.com/KloudMedical/KloudRIS/stargazers)  
+  Open-source, multi-tenant web outpatient RIS and practice management platform intended to oversee full radiology encounters, tracking patient status from check-in to finalized report.
+
+---
+
+## 🧩 Building a Modern Open-Source Imaging Stack
+
+A production-ready open-source radiology infrastructure typically integrates three core layers:
+
+1. **Information & Workflow Layer (RIS)**:
+   - Use **Sirius RIS** or **KloudRIS** (or a customized web frontend) to manage patient check-in, modality booking, and diagnostic reporting.
+   - Use an integration engine such as **NextGen Connect (Mirth Connect)** to transform HL7 ADT/ORM messages from existing hospital EHRs.
+2. **Archival & Communication Layer (PACS/VNA)**:
+   - Deploy **Orthanc** or **dcm4chee arc light** with PostgreSQL and Docker/Kubernetes.
+   - Implement DICOM Modality Worklist (MWL) services to push patient study orders directly onto scanner consoles (CT, MRI, X-ray, Ultrasound).
+3. **Diagnostic Visualization Layer (Viewer)**:
+   - Integrate the **OHIF Viewer** (powered by **Cornerstone3D**) or **Weasis** for zero-footprint clinical viewing on workstations, tablets, or referring physician portals.
+
+---
+
+## 🔍 Key Evaluation Criteria for RIS Buyers
+
+When assessing commercial SaaS RIS platforms or building an open-source solution, ensure the following core capabilities are evaluated:
+
+- **Modality Worklist (MWL) Reliability**: Automated push of patient demographics and study accessions to imaging modalities to eliminate manual entry errors.
+- **Reporting & Speech Recognition**: Integration with medical dictation tools (Dragon Medical One, 3M M*Modal, or Whisper-based AI transcription) and structured reporting templates.
+- **Prior Authorization & Insurance Verification**: Built-in eligibility checks to prevent claim denials and accelerate outpatient billing cycles.
+- **Interoperability Standards**: Robust support for HL7 v2, DICOM 3.0, DICOMweb (WADO-RS, QIDO-RS, STOW-RS), and HL7 FHIR ImagingStudy resources.
+- **Regulatory Certifications**: HIPAA, GDPR, SOC 2 Type II compliance, and local medical device clearances (such as FDA 510(k) or CE Class IIa for diagnostic viewer components).
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Radiology-Information-Systems&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Radiology-Information-Systems&type=date&legend=top-left)
+
+---
+
+## 🤝 How to Contribute
+
+Contributions from radiology administrators, imaging informatics specialists, PACS admins, and healthcare software engineers are warmly welcomed!
+
+1. 🍴 **Fork the repository**.
+2. 🌿 **Create a descriptive feature branch** (`git checkout -b add-ris-platform`).
+3. 📝 **Add or update entries** following the established table/list formatting. Ensure all pricing, company size, and free trial limits are explicitly sourced and verified.
+4. 🚀 **Submit a Pull Request** with a concise explanation of your additions.
+
+Explore more curated developer lists at **[Awesome Awesome Awesome](https://github.com/ishandutta2007/Awesome-Awesome-Awesome)**!
+
+---
+
+## ⚖️ Disclaimer & Regulatory Compliance
+
+- This repository is a community-curated technical directory for informational and educational purposes only. Mention of specific commercial products or open-source projects does not constitute a clinical endorsement.
+- Radiology Information Systems handle Protected Health Information (PHI) and critical diagnostic workflows. Any clinical software deployment must comply with mandatory healthcare standards (including HIPAA, GDPR, HITECH, and regional medical device regulations).
+- Open-source tools provide great flexibility but demand experienced healthcare IT administrators for secure deployment, TLS encryption, regular backups, and clinical validation.
+
+---
+
+<p align="center">
+  <b>Made with ❤️ for radiologists, PACS administrators, and healthtech software engineers worldwide.</b>
+</p>
